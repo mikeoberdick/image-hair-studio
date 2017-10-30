@@ -16,13 +16,36 @@ get_header();
 <div class="wrapper" id="page-wrapper">
 
 	<main class="site-main" id="main">
+	<?php if ( !is_front_page() && has_post_thumbnail() ): ?>
+		<header class="entry-header" style = "background-image: url('<?php the_post_thumbnail_url(); ?>')">
+		<div class="opacityLayer">
+			<div class = "titleWrapper">
+				<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+			</div>
+		</div>
+	</header><!-- .entry-header -->
+	
+	<?php elseif ( !is_front_page() && !has_post_thumbnail() ): ?>
 
+	<header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/default_bg.jpg';?>)">
+		<div class="opacityLayer">
+	        <div class = "titleWrapper">
+	        <?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+	        </div>
+	    </div>
+    </header><!-- .entry-header -->
+    <?php endif; ?>
+	
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php
 
 			if( is_page( 'homepage' ) ) {
 					get_template_part( 'template-parts/content', 'home' );
+			}
+
+			elseif( is_page( 'contact-image-hair-studio' ) ) {
+					get_template_part( 'template-parts/content', 'contact' );
 			}
 
 			else {

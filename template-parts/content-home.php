@@ -1,21 +1,62 @@
-<div class="container-fluid heroSection" id="content" tabindex="-1" style = "background-image: url('<?php the_field('hero_image'); ?>')">
+<?php $image = get_field('hero_image'); ?>
+<div class="container-fluid heroSection" style = "background-image: url('<?php echo $image['url']; ?>')">
 	<div class = "row opacityLayer">
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm-12 hpCallout">
-						<h2 class = "mb-5 text-center pl-5 pr-5 hpCTA"><?php the_field('homepage_cta'); ?></h2>
+						<h2 class = "text-center pl-5 pr-5 hpCTA"><?php the_field('hero_text'); ?></h2>
 				</div>
 			</div>
-				
-				<div class ="row hpButtons">
-					<div class = "col-sm-6 text-center">
-						<a href = "<?php echo bloginfo('url'); ?>/candidates"><button type="button" class="btn btn-primary btn-lg">CTA 1</button></a>
-					</div>
-					<div class = "col-sm-6 text-center">
-						<a href = "<?php echo bloginfo('url'); ?>/employers"><button type="button" class="btn btn-primary btn-lg">CTA 2</button></a>
-					</div>
-				</div><!-- .row -->
+		</div><!-- .container -->
+	</div><!-- #opacityLayer -->	
+</div><!-- .container-fluid -->
 
+<?php $servicesImage = get_field('services_section_image'); ?>
+<div class="container-fluid homepageSection" style = "background-image: url('<?php echo $servicesImage['url']; ?>')">
+	<div class = "row opacityLayer">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-sm-12">
+						<h2 class = "sectionTitle text-center pl-5 pr-5">Services</h2>
+				</div>
+			</div>
+		</div><!-- .container -->
+	</div><!-- #opacityLayer -->	
+</div><!-- .container-fluid -->
+
+<?php $staffImage = get_field('staff_section_image'); ?>
+<div class="container-fluid homepageSection" style = "background-image: url('<?php echo $staffImage['url']; ?>')">
+	<div class = "row opacityLayer">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-sm-12">
+						<h2 class = "sectionTitle text-center pl-5 pr-5">Our Staff</h2>
+				</div>
+			</div>
+		</div><!-- .container -->
+	</div><!-- #opacityLayer -->	
+</div><!-- .container-fluid -->
+
+<?php $staffPhoto = get_field('staff_photo'); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6"><img src="<?php echo $staffPhoto['url']; ?>" alt="<?php echo $staffPhoto['alt']; ?>"></div>
+		<div class="col-sm-6">
+			<h5>The Girls of Image Hair Studio</h5>
+			<p><?php the_field('staff_text'); ?></p>
+		</div>
+	</div>
+</div>
+
+<?php $instagramImage = get_field('instagram_section_image'); ?>
+<div class="container-fluid homepageSection" style = "background-image: url('<?php echo $instagramImage['url']; ?>')">
+	<div class = "row opacityLayer">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-sm-12">
+						<h2 class = "sectionTitle text-center pl-5 pr-5">Instagram</h2>
+				</div>
+			</div>
 		</div><!-- .container -->
 	</div><!-- #opacityLayer -->	
 </div><!-- .container-fluid -->

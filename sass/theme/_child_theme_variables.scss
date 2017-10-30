@@ -7,12 +7,15 @@
 
 //Colors
 
-$brand-primary:         #f58634; // Orange
+$brand-primary:     #ef1557; // Pink
 $brand-secondary:		#000000; // Brand Secondary Color
 $brand-tertiary:		#ff0000; // Brand Tertiary Color
 
-$header-font:           'nunito', sans-serif; // Nunito
-$body-font:             'Open Sans', sans-serif; // Open Sans
+$body-font-color:   #b2b2b2;
+
+$CTA-font:          'Amita', cursive;
+$header-font:       'Open Sans', sans-serif;
+$body-font:         'Open Sans', sans-serif;
 
 //Fluid Typography Variables
 $min_width: 320px;
@@ -24,14 +27,9 @@ $max_font: 18px;
 $mod_1: 1.2; // mobile
 $mod_2: 1.5; // desktop
 
-
-
-
-
 //Mix-Ins
 
 //All Headings
-
 @mixin headings {
     h1, h2, h3,
     h4, h5, h6 {
