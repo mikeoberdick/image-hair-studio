@@ -1,4 +1,4 @@
-<div id = "contactPage">
+<div id = "aboutPage">
 
 <div id = "contact_callout" class="container-fluid">
 	<div class="row contact_info">
@@ -42,4 +42,4 @@
 	</div><!-- .row -->
 </div><!-- .container -->
 
-</div><!-- #contactPage -->
+</div><!-- #aboutPage -->

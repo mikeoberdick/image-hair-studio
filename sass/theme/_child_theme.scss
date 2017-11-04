@@ -75,13 +75,27 @@ body {
 
 .wrapper-navbar {
     position: fixed;
-    height: 115px;
+    height: 95px;
     width: 100%;
     z-index: 1;
     background-color: #fff;
 
 	#navbarNavDropdown {
 		justify-content: flex-end;
+
+		a {
+			color: #000000;
+			
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+
+		.active {
+			a {
+				color: $brand-primary;
+			}
+		}
 	}
 
 }
@@ -99,7 +113,13 @@ body {
 /*------------------------------------------------*/
 
 .wrapper {
-	padding-top: 115px;
+	padding-top: 95px;
+}
+
+.page-id-36 {
+	header {
+		margin-bottom: 0;
+	}
 }
 
 header {
@@ -246,16 +266,38 @@ header {
 
 //CONTACT
 #contactPage {
-	.contactInfo {
-		i {
-			color: $brand-primary;
-			font-size: 20px;
-		}
+	#contact_callout {
+		background-color: #f01656;
+	    color: white;
+	    text-align: center;
+	    padding: 30px;
+	    margin-bottom: 2rem;
 
-		a {
-			color: $body-font-color;
-			&:hover {
-				text-decoration: none;
+		.contact_info {
+			h3 {
+				color: #ffffff;
+			}
+
+			a {
+				color: #ffffff;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	#studioHours {
+		ul {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				span {
+					font-weight: bold;
+					color: #000000;
+				}
 			}
 		}
 	}

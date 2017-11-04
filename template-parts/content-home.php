@@ -37,13 +37,15 @@
 	</div><!-- #opacityLayer -->	
 </div><!-- .container-fluid -->
 
-<?php $staffPhoto = get_field('staff_photo'); ?>
 <div class="container">
 	<div class="row">
-		<div class="col-sm-6"><img src="<?php echo $staffPhoto['url']; ?>" alt="<?php echo $staffPhoto['alt']; ?>"></div>
+		<div class="col-sm-6">
+			<?php $staffPhoto = get_field('staff_photo'); ?>
+			<img src="<?php echo $staffPhoto['url']; ?>" alt="<?php echo $staffPhoto['alt']; ?>"></div>
 		<div class="col-sm-6">
 			<h5>The Girls of Image Hair Studio</h5>
 			<p><?php the_field('staff_text'); ?></p>
+			<a href = '<?php echo bloginfo('url'); ?>/meet-the-staff'><button role = 'button' class = 'btn btn-primary btn-lg'>Meet The Staff</button></a>
 		</div>
 	</div>
 </div>

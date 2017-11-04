@@ -44,6 +44,14 @@ get_header();
 					get_template_part( 'template-parts/content', 'home' );
 			}
 
+			elseif( is_page( 'about-our-studio' ) ) {
+					get_template_part( 'template-parts/content', 'about' );
+			}
+
+			elseif( is_page( 'meet-the-staff' ) ) {
+					get_template_part( 'template-parts/content', 'staff' );
+			}
+
 			elseif( is_page( 'contact-image-hair-studio' ) ) {
 					get_template_part( 'template-parts/content', 'contact' );
 			}
