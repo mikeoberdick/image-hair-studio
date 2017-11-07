@@ -15,31 +15,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php if ( is_active_sidebar( 'footer_1') || is_active_sidebar( 'footer_2') || is_active_sidebar( 'footer_3') || is_active_sidebar( 'footer_4') ) { ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="wrapper" id="wrapper-footer" style = "background-image:url(https://thumb9.shutterstock.com/display_pic_with_logo/2011994/354632588/stock-vector-vector-seamless-pattern-with-hand-drawn-symbols-of-hair-salon-on-black-color-pattern-on-the-theme-354632588.jpg);">
 
-	<div class="<?php echo esc_html( $container ); ?>">
+	<div class = "opacityLayer">
+			<div class="<?php echo esc_html( $container ); ?>">
+				<div id = "footerWidgets" class = "row">
+					<div class = "col-lg-3 col-sm-12">
+						<?php dynamic_sidebar('footer_1'); ?>
+					</div>
+					
+					<div class = "col-lg-3 col-sm-12">
+						<?php dynamic_sidebar('footer_2'); ?>
+					</div>
+					
+					<div class = "col-lg-3 col-sm-12">
+						<?php dynamic_sidebar('footer_3'); ?>
+					</div>
+					
+					<div class = "col-lg-3 col-sm-12">
+						<?php dynamic_sidebar('footer_4'); ?>
+					</div>
 
-	<div id = "footerWidgets" class = "row">
-
-		<div class = "col-lg-3 col-sm-12">
-			<?php dynamic_sidebar('footer_1'); ?>
-		</div>
-		
-		<div class = "col-lg-3 col-sm-12">
-			<?php dynamic_sidebar('footer_2'); ?>
-		</div>
-		
-		<div class = "col-lg-3 col-sm-12">
-			<?php dynamic_sidebar('footer_3'); ?>
-		</div>
-		
-		<div class = "col-lg-3 col-sm-12">
-			<?php dynamic_sidebar('footer_4'); ?>
-		</div>
-
-	</div><!-- #footerWidgets -->
-
-	</div><!-- .container -->
+			</div><!-- #footerWidgets -->
+		</div><!-- .container -->
+	</div><!-- .opacityLayer -->
 
 	<?php } ?>
 
