@@ -11,6 +11,16 @@
 	</div><!-- #opacityLayer -->	
 </div><!-- .container-fluid -->
 
+<div id = "hpSlogan" class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><?php the_field('slogan', 'option'); ?></h3>
+			</div>
+		</div>
+	</div>
+</div>
+
 <?php $servicesImage = get_field('services_section_image'); ?>
 <div class="container-fluid homepageSection" style = "background-image: url('<?php echo $servicesImage['url']; ?>')">
 	<div class = "row opacityLayer">
@@ -62,3 +72,6 @@
 		</div><!-- .container -->
 	</div><!-- #opacityLayer -->	
 </div><!-- .container-fluid -->
+<div id = "instagramSlider">
+	<?php echo do_shortcode('[rev_slider alias="instagram"]'); ?>
+</div>

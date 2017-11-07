@@ -9421,6 +9421,11 @@ header {
   .home .heroSection .hpCTA {
     font-size: 48px; } }
 
+.home #hpSlogan {
+  background-color: #4963a7;
+  padding: 75px;
+  color: #ffffff; }
+
 .home .homepageSection {
   background-position: center center;
   min-height: 300px;
@@ -9460,6 +9465,28 @@ header {
 @media (min-width: 768px) and (max-width: 991px) {
   .home .homepageSection h2 {
     font-size: 48px; } }
+
+#staffPage .staffProfile {
+  margin-top: 3rem; }
+  #staffPage .staffProfile .profilePic {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3); }
+  #staffPage .staffProfile hr {
+    text-align: center;
+    width: 100%;
+    border-color: #c3c3c3; }
+    #staffPage .staffProfile hr:after {
+      content: "\f0c4";
+      color: #000000;
+      font: normal normal normal 14px/1 FontAwesome;
+      position: relative;
+      top: -.6em;
+      font-size: 1.5em;
+      padding: 0 1.5em;
+      background: #fff; }
+  #staffPage .staffProfile:last-of-type hr {
+    display: none; }
 
 #contactPage #contact_callout {
   background-color: #f01656;
@@ -9545,7 +9572,7 @@ header {
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/
 #wrapper-footer {
-  color: #000000;
+  color: #4963a7;
   padding-top: 0;
   padding-bottom: 0;
   text-transform: uppercase;

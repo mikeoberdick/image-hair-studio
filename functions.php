@@ -21,6 +21,11 @@ require get_stylesheet_directory() . '/inc/cpt.php';
 require get_stylesheet_directory() . '/inc/dashboard.php';
 
 /**
+ * Image functions
+ */
+require get_stylesheet_directory() . '/inc/images.php';
+
+/**
  * Setup Theme Menus
  */
 require get_stylesheet_directory() . '/inc/menus.php';
