@@ -11,7 +11,7 @@
 	</div><!-- #opacityLayer -->	
 </div><!-- .container-fluid -->
 
-<div id = "hpSlogan" style = "background-image: url(https://blisshairandbeauty.files.wordpress.com/2013/09/bliss-background.jpg);">
+<div id = "hpSlogan" style = "background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/elegant_bg.jpg);">
 	<div class="container-fluid innerContainer">
 		<div class="container">
 			<div class="row">

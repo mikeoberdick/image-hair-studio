@@ -1,13 +1,18 @@
 <div id = "contactPage">
 
-<div id = "contact_callout" class="container-fluid">
-	<div class="row contact_info">
-		<div class="col-sm-12">
-			<h3>Contact Info</h3>
-			<i class="fa fa-phone mr-2" aria-hidden="true"></i> <a href = "tel:<?php the_field('phone', 'option'); ?>"><?php the_field('phone', 'option'); ?></a> | <i class="fa fa-envelope mr-2" aria-hidden="true"></i><a href = "mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
-		</div>		
-	</div>
-</div><!-- .container-fluid -->
+<div id = "contact_callout" style = "background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/elegant_bg.jpg);">
+	<div class="container-fluid innerContainer">
+		<div class="container">
+			<div class="row contact_info">
+				<div class="col-sm-12">
+					<h1>Contact Info</h1>
+					<a href = "tel:<?php the_field('phone', 'option'); ?>"><h3><i class="fa fa-phone mr-2" aria-hidden="true"></i><?php the_field('phone', 'option'); ?></h3></a>
+					<a href = "mailto:<?php the_field('email', 'option'); ?>"><h3><i class="fa fa-envelope mr-2" aria-hidden="true"></i><?php the_field('email', 'option'); ?></h3></a>
+				</div><!-- .col-sm-12 -->	
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</div><!-- .container-fluid -->
+</div><!-- #contact_callout -->
 
 <div class="container">
 	<div class="row">

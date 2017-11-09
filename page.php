@@ -52,6 +52,10 @@ get_header();
 					get_template_part( 'template-parts/content', 'staff' );
 			}
 
+			elseif( is_page( 'services' ) ) {
+					get_template_part( 'template-parts/content', 'services' );
+			}
+
 			elseif( is_page( 'contact-image-hair-studio' ) ) {
 					get_template_part( 'template-parts/content', 'contact' );
 			}

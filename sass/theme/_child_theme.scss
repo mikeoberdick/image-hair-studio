@@ -17,7 +17,7 @@ html {
 }
 
 h1, h2, h3, h4, h5 {
-	color: $brand-primary;
+	color: $brand-tertiary;
 	font-family: $header-font;
 }
 
@@ -49,6 +49,10 @@ body {
 	}
 }
 
+a:active {
+	text-decoration: none;
+}
+
 /*------------------------------------------------*/
 /*-------------------[BUTTONS]--------------------*/
 /*------------------------------------------------*/
@@ -57,8 +61,8 @@ body {
 	font-family: $body-font;
 	text-transform: uppercase;
 	color: #fff !important;
-	background-color: $brand-secondary !important;
-	border-color: $brand-secondary !important;
+	background-color: $brand-primary !important;
+	border-color: $brand-primary !important;
 	@include border-radius(5px);
 
 	&:hover {
@@ -68,8 +72,8 @@ body {
 			
 .btn-primary {
 	&:hover {
-		background-color: darken( $brand-secondary, 10% ) !important;
-		border-color: $brand-secondary !important;
+		background-color: darken( $brand-primary, 10% ) !important;
+		border-color: $brand-primary !important;
    	}
   }
 
@@ -93,7 +97,7 @@ body {
 			    display: block;
 			    width: 0;
 			    height: 2px;
-			    background: $brand-secondary;
+			    background: $brand-primary;
 			    transition: width .3s;
 			}
 
@@ -102,7 +106,7 @@ body {
 			}
 
 			a {
-				color: #000000;
+				color: $brand-tertiary;
 				font-weight: bold;
 			}
 
@@ -115,7 +119,7 @@ body {
 			    display: block;
 			    width: 100%;
 			    height: 2px;
-			    background: $brand-secondary;
+			    background: $brand-primary;
 			}
 		}
 			
@@ -164,7 +168,7 @@ header {
 				position: relative;
 		    	padding-bottom: 15px;
 		    	color: white;
-			    text-shadow: 0 0 15px #000;
+			    text-shadow: 0 0 15px $brand-tertiary;
 			    font-weight: bold;
 				margin-bottom: 0;
 			    font-family: $CTA-font;
@@ -177,7 +181,7 @@ header {
 				    content: "";
 				    width: 50px;
 				    height: 2px;
-				    background-color: $brand-secondary;
+				    background-color: $brand-primary;
 				    margin-left: auto;
 				    margin-right: auto;
 		 		}
@@ -305,7 +309,7 @@ header {
 		    content: "";
 		    width: 50px;
 		    height: 2px;
-		    background-color: $brand-secondary;
+		    background-color: $brand-primary;
 		    margin-left: auto;
 		    margin-right: auto;
  			}
@@ -327,6 +331,11 @@ header {
 			@include shadow;
 		}
 
+		h3 {
+			color: $brand-primary;
+			font-family: Courgette,cursive;
+		}
+
 		hr {
 		    text-align: center;
 		    width: 100%;
@@ -334,7 +343,7 @@ header {
 
 		    &:after {
 		    	content: "\f0c4";
-		    	color: #000000;
+		    	color: $brand-tertiary;
 		    	font: normal normal normal 14px/1 FontAwesome;
 		    	position: relative;
 			    top: -.6em;
@@ -355,15 +364,23 @@ header {
 //CONTACT
 #contactPage {
 	#contact_callout {
-		background-color: $brand-primary;
 	    color: white;
 	    text-align: center;
-	    padding: 30px;
 	    margin-bottom: 2rem;
 
+	    .innerContainer {
+			background-color: rgba(73,99,167,.77);
+			padding: 50px;
+	    }
+
 		.contact_info {
-			h3 {
+			h1, h3{
 				color: #ffffff;
+				font-family: Arima Madurai,cursive;
+			}
+
+			h3 {
+				word-break: break-all;
 			}
 
 			a {
@@ -384,7 +401,7 @@ header {
 			li {
 				span {
 					font-weight: bold;
-					color: #000000;
+					color: $brand-tertiary;
 				}
 			}
 		}
@@ -485,7 +502,7 @@ header {
 				    content: "";
 				    width: 50px;
 				    height: 2px;
-				    background-color: $brand-secondary;
+				    background-color: $brand-primary;
 				}
 			}
 
@@ -508,8 +525,12 @@ header {
 		}
 	}
 
+		a:hover {
+			text-decoration: none;
+		}
+
 		.btn-primary {
-			background-color: $brand-secondary;
+			background-color: $brand-primary;
 		}
 	}
 }
