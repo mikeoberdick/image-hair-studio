@@ -361,6 +361,36 @@ header {
 	}
 }
 
+//SERVICES
+
+#servicesPage {
+	#servicesMenu {
+		.nav-item {
+			margin-top: 5px;
+		}
+		
+		a {
+			background: linear-gradient(to right, $brand-primary 50%, white 50%);
+		    background-size: 200% 100%;
+		    background-position: right bottom;
+		    transition: all .25s linear;
+
+			&:hover {
+				color: white;
+				background-position:left bottom;
+			}
+		}
+		.active {
+			background: $brand-primary;
+			&:hover {
+				color: #ffffff;
+				background-color: $brand-primary;
+			}
+			
+		}
+	}
+}
+
 //CONTACT
 #contactPage {
 	#contact_callout {

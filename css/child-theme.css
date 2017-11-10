@@ -9521,6 +9521,24 @@ header {
   #staffPage .staffProfile:last-of-type hr {
     display: none; }
 
+#servicesPage #servicesMenu .nav-item {
+  margin-top: 5px; }
+
+#servicesPage #servicesMenu a {
+  background: linear-gradient(to right, #ef1557 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .25s linear; }
+  #servicesPage #servicesMenu a:hover {
+    color: white;
+    background-position: left bottom; }
+
+#servicesPage #servicesMenu .active {
+  background: #ef1557; }
+  #servicesPage #servicesMenu .active:hover {
+    color: #ffffff;
+    background-color: #ef1557; }
+
 #contactPage #contact_callout {
   color: white;
   text-align: center;
