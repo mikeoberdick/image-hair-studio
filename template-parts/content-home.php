@@ -62,6 +62,67 @@
 	</div><!-- #opacityLayer -->	
 </div><!-- .container-fluid -->
 
+<div id = "hpServiceCards" class="container mt-5">
+	<div class="card-deck">
+		
+		<div class="card">
+			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+				<div class="opacityLayer">
+  					<h3>Haircutting & Styling</h3>
+  				</div>
+  			</div>
+		</div><!-- .card -->
+
+		<div class="card">
+			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+				<div class="opacityLayer">
+  					<h3>Blowdry</h3>
+  				</div>
+  			</div>
+		</div><!-- .card -->
+
+		<div class="card">
+			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+				<div class="opacityLayer">
+  					<h3>Color Services</h3>
+  				</div>
+  			</div>
+		</div><!-- .card -->
+
+		<div class="card">
+			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+				<div class="opacityLayer">
+  					<h3>Treatments</h3>
+  				</div>
+  			</div>
+		</div><!-- .card -->
+
+		<div class="card">
+			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+				<div class="opacityLayer">
+  					<h3>Texturizing Waves</h3>
+  				</div>
+  			</div>
+		</div><!-- .card -->
+
+		<div class="card">
+			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+				<div class="opacityLayer">
+  					<h3>Air Brush Makeup</h3>
+  				</div>
+  			</div>
+		</div><!-- .card -->
+
+		<div class="card">
+			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+				<div class="opacityLayer">
+  					<h3>Waxing</h3>
+  				</div>
+  			</div>
+		</div><!-- .card -->
+  	</div>
+</div>
+
 <?php $instagramImage = get_field('instagram_section_image'); ?>
 <div class="container-fluid homepageTitle" style = "background-image: url('<?php echo $instagramImage['url']; ?>')">
 	<div class = "row opacityLayer">

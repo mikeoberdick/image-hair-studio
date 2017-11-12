@@ -321,6 +321,43 @@ header {
 		padding-bottom: 50px;
 	}
 
+	#hpServiceCards {
+
+		.card {
+			margin-bottom: 50px;
+	    	text-align: center;
+	    	border: solid 3px $brand-primary;
+	    	flex-basis: 25%;
+
+	    	.cardInner {
+	    		height: 250px;
+			    color: white;
+			    text-transform: uppercase;
+
+			    .opacityLayer {
+			    	background-color: rgba(0, 0, 0, 0.59);
+				    height: 250px;
+				    display: flex;
+				    align-items: center;
+
+				    h3 {
+				    	color: white;
+				    	margin-bottom: 0;
+				    	width: 100%;
+				    }
+			    }
+	    	}
+
+	    	&:nth-of-type(3) {
+	    		margin-right:0;
+	    	}
+
+	    	&:nth-of-type(4) {
+	    		margin-left: 0;
+	    	}
+		}
+	}
+
 }
 
 #staffPage {
@@ -371,7 +408,7 @@ header {
 		
 		a {
 			background: linear-gradient(to right, $brand-primary 50%, white 50%);
-		    background-size: 200% 100%;
+		    background-size: 203% 100%;
 		    background-position: right bottom;
 		    transition: all .25s linear;
 
@@ -387,6 +424,19 @@ header {
 				background-color: $brand-primary;
 			}
 			
+		}
+	}
+
+	.table {
+		tr:first-child {
+			td {
+				border-top: 0;
+			}
+		}
+
+		span {
+			font-style: italic;
+    		font-size: .8em;
 		}
 	}
 }

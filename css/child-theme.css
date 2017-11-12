@@ -9496,6 +9496,29 @@ header {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.home #hpServiceCards .card {
+  margin-bottom: 50px;
+  text-align: center;
+  border: solid 3px #ef1557;
+  flex-basis: 25%; }
+  .home #hpServiceCards .card .cardInner {
+    height: 250px;
+    color: white;
+    text-transform: uppercase; }
+    .home #hpServiceCards .card .cardInner .opacityLayer {
+      background-color: rgba(0, 0, 0, 0.59);
+      height: 250px;
+      display: flex;
+      align-items: center; }
+      .home #hpServiceCards .card .cardInner .opacityLayer h3 {
+        color: white;
+        margin-bottom: 0;
+        width: 100%; }
+  .home #hpServiceCards .card:nth-of-type(3) {
+    margin-right: 0; }
+  .home #hpServiceCards .card:nth-of-type(4) {
+    margin-left: 0; }
+
 #staffPage .staffProfile {
   margin-top: 3rem; }
   #staffPage .staffProfile .profilePic {
@@ -9526,7 +9549,7 @@ header {
 
 #servicesPage #servicesMenu a {
   background: linear-gradient(to right, #ef1557 50%, white 50%);
-  background-size: 200% 100%;
+  background-size: 203% 100%;
   background-position: right bottom;
   transition: all .25s linear; }
   #servicesPage #servicesMenu a:hover {
@@ -9538,6 +9561,13 @@ header {
   #servicesPage #servicesMenu .active:hover {
     color: #ffffff;
     background-color: #ef1557; }
+
+#servicesPage .table tr:first-child td {
+  border-top: 0; }
+
+#servicesPage .table span {
+  font-style: italic;
+  font-size: .8em; }
 
 #contactPage #contact_callout {
   color: white;
