@@ -361,6 +361,11 @@ header {
 		}
 	}
 
+	#instagramFollow {
+		border: solid 3px $brand-secondary;
+    	@include border-radius(5px);
+	}
+
 }
 
 #staffPage {

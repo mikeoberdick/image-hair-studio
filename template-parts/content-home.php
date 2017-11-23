@@ -139,7 +139,7 @@
 		<?php echo do_shortcode('[rev_slider alias="instagram"]'); ?>
 	</div>
 	<div class = "text-center">
-		<a href="http://www.instagram.com/imagehairstudio"><img class = "mt-3" src="<?php echo get_stylesheet_directory_uri() . '/img/follow_on_instagram.jpg';?>" alt="Follow Image Hair Studio in Instagram">
+		<a href="http://www.instagram.com/imagehairstudio"><img id = "instagramFollow" class = "mt-3" src="<?php echo get_stylesheet_directory_uri() . '/img/follow_on_instagram.jpg';?>" alt="Follow Image Hair Studio in Instagram">
 		</a>
 	</div>
 </div>
