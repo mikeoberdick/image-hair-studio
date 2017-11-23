@@ -440,6 +440,16 @@ header {
 			}
 		}
 
+		td {
+			border-color: #d8d8d8;
+		}
+
+		tr {
+			td:first-child {
+			    color: #4963a7;
+			}
+		}
+
 		span {
 			font-style: italic;
     		font-size: .8em;
@@ -451,6 +461,9 @@ header {
 #contactPage {
 
 	#studioHours {
+		
+		font-size: 1.2rem;
+
 		ul {
 			list-style: none;
 			padding-left: 0;

@@ -9573,16 +9573,24 @@ header {
 #servicesPage .table tr:first-child td {
   border-top: 0; }
 
+#servicesPage .table td {
+  border-color: #d8d8d8; }
+
+#servicesPage .table tr td:first-child {
+  color: #4963a7; }
+
 #servicesPage .table span {
   font-style: italic;
   font-size: .8em; }
 
-#contactPage #studioHours ul {
-  list-style: none;
-  padding-left: 0; }
-  #contactPage #studioHours ul li span {
-    font-weight: bold;
-    color: #4963a7; }
+#contactPage #studioHours {
+  font-size: 1.2rem; }
+  #contactPage #studioHours ul {
+    list-style: none;
+    padding-left: 0; }
+    #contactPage #studioHours ul li span {
+      font-weight: bold;
+      color: #4963a7; }
 
 #contactPage #studioContact i {
   color: #000000; }
