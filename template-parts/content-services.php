@@ -2,28 +2,25 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
-				<h5>Services Menu</h5>
+				<h5>Services</h5>
 				<ul id = "servicesMenu" class="nav nav-pills flex-column" role="tablist">
 				  <li class="nav-item">
 				   <a class="nav-link active" data-toggle="tab" href="#haircutting_and_styling" role="tab">Haircutting & Styling</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" data-toggle="tab" href="#blowdry" role="tab">Blowdry</a>
+				    <a class="nav-link" data-toggle="tab" href="#color_services" role="tab">Color Services</a>
 				  </li>
 				  <li class="nav-item">
-				   <a class="nav-link" data-toggle="tab" href="#color_services" role="tab">Color Services</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" data-toggle="tab" href="#treatments" role="tab">Treatments</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" data-toggle="tab" href="#texturizing_waves" role="tab">Texturizing Waves</a>
+				   <a class="nav-link" data-toggle="tab" href="#texture_treaments_and_designer_waves" role="tab">Texture Treatments & Designer Waves</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" data-toggle="tab" href="#air_brush_makeup" role="tab">Air Brush Makeup</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" data-toggle="tab" href="#waxing" role="tab">Waxing</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#bridal_work" role="tab">Bridal Work</a>
 				  </li>
 				</ul>
 			</div><!-- .col-md-4 -->
@@ -32,7 +29,7 @@
 				<div class="tab-content">
 				  <div class="tab-pane active" id="haircutting_and_styling" role="tabpanel">
 				  	<h3>Haircutting and Styling</h3>
-				  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque labore natus quod nulla est. Tenetur impedit, velit sit. Reprehenderit maiores provident aliquid praesentium maxime. Dolorem qui aut iste porro mollitia?</p>
+				  	<p>Our talented team offers precision haircuts and styling based on your individual and personal lifestyle. Each stylist will deliver a customized cut that suits your hair type and texture.</p>
 				  	<table class="table">
 					  <tbody>
 					    <tr>
@@ -51,34 +48,25 @@
 					      <td>Children's Haircut</td>
 					      <td>20</td>
 					    </tr>
+					    <tr>
+					      <td>Blowdry</td>
+					      <td>30</td>
+					    </tr>
+					    <tr>
+					      <td>Up Styling</td>
+					      <td>75</td>
+					    </tr>
+					    <tr>
+					      <td>Iron Work</td>
+					      <td>10</td>
+						</tr>
 					  </tbody>
 					</table>
 				  </div><!-- .tab-pane -->
-
-	 				<div class="tab-pane" id="blowdry" role="tabpanel">
-					  <h3>Blowdry</h3>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque labore natus quod nulla est. Tenetur impedit, velit sit. Reprehenderit maiores provident aliquid praesentium maxime. Dolorem qui aut iste porro mollitia?</p>
-						  <table class="table">
-						  <tbody>
-						    <tr>
-						      <td>Blowdry</td>
-						      <td>30</td>
-						    </tr>
-						    <tr>
-						      <td>Up Styling</td>
-						      <td>75</td>
-						    </tr>
-						    <tr>
-						      <td>Iron Work</td>
-						      <td>10</td>
-						    </tr>
-						  </tbody>
-						</table>
-					</div><!-- .tab-pane -->
 				  
 				  <div class="tab-pane" id="color_services" role="tabpanel">
 				  	<h3>Color Services</h3>
-				  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque labore natus quod nulla est. Tenetur impedit, velit sit. Reprehenderit maiores provident aliquid praesentium maxime. Dolorem qui aut iste porro mollitia?</p>
+				  	<p>Our team of knowledgeable professionals are Wella certified and educated in the most current coloring techniques. At Image we take into consideration the integrity of your hair, facial tonality, working lifestyle and maintenance goals.</p>
 				  	<table class="table">
 						  <tbody>
 						    <tr>
@@ -126,9 +114,10 @@
 						</table>
 				  </div><!-- .tab-pane -->
 
-				 <div class="tab-pane" id="treatments" role="tabpanel">
-					  <h3>Treatments</h3>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos optio, similique perspiciatis enim aliquam incidunt quas expedita assumenda saepe quod temporibus deleniti atque iusto dolores consequatur, eius voluptatum, minus accusantium.</p>
+				 <div class="tab-pane" id="texture_treaments_and_designer_waves" role="tabpanel">
+					  <h3>Texture Treatments & Designer Waves</h3>
+					  <p>Our stylists are certified to tame your hair with a range of smoothing solutions for every hair type, lifestyle and budget. Keratin is best for clients seeking long lasting smoothness, manageability, protection against humidity, while repairing the structure of the overall silouette of your hair.</p>
+					  <p>Clients looking to add body, wave and bounce to the hair will benefit highly from a body wave.</p>
 					  <table class="table">
 						  <tbody>
 						    <tr>
@@ -143,27 +132,22 @@
 						      <td>Well Water Treatment</td>
 						      <td>15</td>
 						    </tr>
+						    <tr>
+						      <td>Texturizing Waves</td>
+						      <td>>???</td>
+						    </tr>
 						  </tbody>
 						</table>
 					</div><!-- .tab-pane -->
 
-					<div class="tab-pane" id="texturizing_waves" role="tabpanel">
-						<div class = "row">
-							<div class="col-sm-12">
-							<h3>Texturizing Waves</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quia, reprehenderit similique eum incidunt rem vel in debitis provident ipsam. Neque nihil magni maxime, natus non, iusto expedita veniam quo!</p>
-							</div>
-						</div>
-					</div><!-- .tab-pane -->
-
 					<div class="tab-pane" id="air_brush_makeup" role="tabpanel">
 					  <h3>Air Brush Makeup</h3>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo commodi inventore molestias quaerat ipsa soluta quam maxime, non sapiente, iste error ea architecto doloremque facilis accusantium eos itaque libero enim.</p>
+					  <p>Airbrush makeup brings flawless coverage is hypo-allergenic and minimizes skin imperfections. The result is a beautiful and natural finish that will last all day.</p>
 					</div><!-- .tab-pane -->
 
 					<div class="tab-pane" id="waxing" role="tabpanel">
 					  <h3>Waxing</h3>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo commodi inventore molestias quaerat ipsa soluta quam maxime, non sapiente, iste error ea architecto doloremque facilis accusantium eos itaque libero enim.</p>
+					  <p>We offer lip, chin and eyebrow waxing while delivering a unique and customized shape focusing on each clients needs.</p>
 						<table class="table">
 						  <tbody>
 						    <tr>
@@ -171,11 +155,20 @@
 						      <td>12</td>
 						    </tr>
 						    <tr>
+						      <td>Chin</td>
+						      <td>???</td>
+						    </tr>
+						    <tr>
 						      <td>Lip</td>
 						      <td>8</td>
 						    </tr>
 						  </tbody>
 						</table>
+					</div><!-- .tab-pane -->
+
+					<div class="tab-pane" id="bridal_work" role="tabpanel">
+					  <h3>Bridal Work</h3>
+					  <p>At Image we specialize in formal styling whether your hair is short, long, straight or wavy. We offer on-site or in-salon bridal hair services and thrive on making your experience the most special day.</p>
 					</div><!-- .tab-pane -->
 
 				</div><!-- .tab-content -->

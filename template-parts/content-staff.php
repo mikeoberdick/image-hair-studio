@@ -1,6 +1,6 @@
 <div id = "staffPage">
 	<div class="container">
-		<h3>SOME PAGE TITLE</h3>
+		<h3>Image Hair Studio Staff</h3>
 		<?php the_content(); ?>
 
 		<?php while ( have_rows('staff_profile') ) : the_row();

@@ -39,8 +39,9 @@
 <div class="container homepageSection">
 	<div class="row">
 		<div class="col-sm-6">
-			<?php $staffPhoto = get_field('staff_photo', 'option'); ?>
-			<img src="<?php echo $staffPhoto['url']; ?>" alt="<?php echo $staffPhoto['alt']; ?>"></div>
+			<?php $staffPhoto = get_field('staff_photo'); ?>
+			<img id = "staffPhoto" src="<?php echo $staffPhoto['url']; ?>" alt="<?php echo $staffPhoto['alt']; ?>">
+		</div>
 		<div class="col-sm-6">
 			<h5>The Girls of Image Hair Studio</h5>
 			<p><?php the_field('staff_text'); ?></p>
@@ -62,11 +63,17 @@
 	</div><!-- #opacityLayer -->	
 </div><!-- .container-fluid -->
 
+<?php $haircut = get_field('styling_img'); ?>
+<?php $color = get_field('color_img'); ?>
+<?php $texture = get_field('texture_img'); ?>
+<?php $makeup = get_field('airbrush_img'); ?>
+<?php $waxing = get_field('waxing_img'); ?>
+<?php $bridal = get_field('bridal_img'); ?>
+
 <div id = "hpServiceCards" class="container mt-5">
 	<div class="card-deck">
-		
 		<div class="card">
-			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+			<div class = "cardInner" style = "background-image: url('<?php echo $haircut['url']; ?>')">
 				<div class="opacityLayer">
   					<h3>Haircutting & Styling</h3>
   				</div>
@@ -74,15 +81,7 @@
 		</div><!-- .card -->
 
 		<div class="card">
-			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
-				<div class="opacityLayer">
-  					<h3>Blowdry</h3>
-  				</div>
-  			</div>
-		</div><!-- .card -->
-
-		<div class="card">
-			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+			<div class = "cardInner" style = "background-image: url('<?php echo $color['url']; ?>')">
 				<div class="opacityLayer">
   					<h3>Color Services</h3>
   				</div>
@@ -90,23 +89,15 @@
 		</div><!-- .card -->
 
 		<div class="card">
-			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+			<div class = "cardInner" style = "background-image: url('<?php echo $texture['url']; ?>')">
 				<div class="opacityLayer">
-  					<h3>Treatments</h3>
+  					<h3>Texture Treatments/Designer Waves</h3>
   				</div>
   			</div>
 		</div><!-- .card -->
 
 		<div class="card">
-			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
-				<div class="opacityLayer">
-  					<h3>Texturizing Waves</h3>
-  				</div>
-  			</div>
-		</div><!-- .card -->
-
-		<div class="card">
-			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+			<div class = "cardInner" style = "background-image: url('<?php echo $makeup['url']; ?>')">
 				<div class="opacityLayer">
   					<h3>Air Brush Makeup</h3>
   				</div>
@@ -114,9 +105,17 @@
 		</div><!-- .card -->
 
 		<div class="card">
-			<div class = "cardInner" style = "background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/services_image.jpg')">
+			<div class = "cardInner" style = "background-image: url('<?php echo $waxing['url']; ?>')">
 				<div class="opacityLayer">
   					<h3>Waxing</h3>
+  				</div>
+  			</div>
+		</div><!-- .card -->
+
+		<div class="card">
+			<div class = "cardInner" style = "background-image: url('<?php echo $bridal['url']; ?>')">
+				<div class="opacityLayer">
+  					<h3>Bridal Work</h3>
   				</div>
   			</div>
 		</div><!-- .card -->
@@ -138,5 +137,9 @@
 <div class="container homepageSection">
 	<div id = "instagramSlider">
 		<?php echo do_shortcode('[rev_slider alias="instagram"]'); ?>
+	</div>
+	<div class = "text-center">
+		<a href="http://www.instagram.com/imagehairstudio"><img class = "mt-3" src="<?php echo get_stylesheet_directory_uri() . '/img/follow_on_instagram.jpg';?>" alt="Follow Image Hair Studio in Instagram">
+		</a>
 	</div>
 </div>

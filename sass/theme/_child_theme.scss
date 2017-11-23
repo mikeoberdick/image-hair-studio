@@ -142,12 +142,6 @@ a:active {
 	padding-top: 95px;
 }
 
-.page-id-36 {
-	header {
-		margin-bottom: 0;
-	}
-}
-
 header {
 	background-size: cover;
     background-position: bottom;
@@ -181,7 +175,7 @@ header {
 				    content: "";
 				    width: 50px;
 				    height: 2px;
-				    background-color: $brand-primary;
+				    background-color: $brand-secondary;
 				    margin-left: auto;
 				    margin-right: auto;
 		 		}
@@ -192,75 +186,12 @@ header {
 
 //HOMEPAGE
 .home {
-	.heroSection {
-	    background-position: center center;
-	    min-height: 550px;
-	    background-attachment: fixed;
-
-	@media only screen 
-	  and (min-device-width: 414px) 
-	  and (max-device-width: 736px) 
-	  and (-webkit-min-device-pixel-ratio: 3) {
-
-		background-attachment: scroll;
-	}
-
-	@media only screen 
-	  and (min-device-width: 768px) 
-	  and (max-device-width: 1024px) 
-	  and (-webkit-min-device-pixel-ratio: 1) {
-
-	  	background-attachment: scroll;
-	}
-	
-    .opacityLayer {
-    	min-height: 550px;
-    	background-color: rgba(0,0,0,.3);
-    	display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-    }
-
-	.hpCallout {
-		@include media-breakpoint-down(xs) { padding-top: 25px; }
-		display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-    }
-
-	.hpCTA {
-		color: #ffffff;
-		@include text-shadow;
-		font-size: 72px;
-		@include media-breakpoint-only(xs) { font-size: 24px; }
-		@include media-breakpoint-only(sm) { font-size: 36px; }
-		@include media-breakpoint-only(md) { font-size: 48px; }
-		font-family: $CTA-font;
-		}
-
-	}
-
-	#hpSlogan {
-		background-position: center;
-    	background-size: cover;
-
-	    .innerContainer {
-	    	background-color: rgba(73, 99, 167, 0.77);
-  			padding: 75px;
-
-	    h1 {
-	    	color: #ffffff;
-	    	@include text-shadow;
-	    	font-family: 'Arima Madurai', cursive;
-	    	text-align: center;
-	    }
-	}
-}
 
 	.homepageTitle {
 	    background-position: center center;
 	    min-height: 300px;
 	    background-attachment: fixed;
+	    background-size: cover;
 
 	@media only screen 
 	  and (min-device-width: 414px) 
@@ -309,7 +240,7 @@ header {
 		    content: "";
 		    width: 50px;
 		    height: 2px;
-		    background-color: $brand-primary;
+		    background-color: $brand-secondary;
 		    margin-left: auto;
 		    margin-right: auto;
  			}
@@ -321,18 +252,90 @@ header {
 		padding-bottom: 50px;
 	}
 
+	.heroSection {
+	    max-height: 450px;
+	    background-attachment: fixed;
+	    background-size: contain;
+
+	@media only screen 
+	  and (min-device-width: 414px) 
+	  and (max-device-width: 736px) 
+	  and (-webkit-min-device-pixel-ratio: 3) {
+
+		background-attachment: scroll;
+	}
+
+	@media only screen 
+	  and (min-device-width: 768px) 
+	  and (max-device-width: 1024px) 
+	  and (-webkit-min-device-pixel-ratio: 1) {
+
+	  	background-attachment: scroll;
+	}
+	
+    .opacityLayer {
+    	min-height: 300px;
+    	max-height: 450px;
+    	background-color: rgba(0,0,0,.3);
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    }
+
+	.hpCallout {
+		@include media-breakpoint-down(xs) { padding-top: 25px; }
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+    }
+
+	.hpCTA {
+		color: #ffffff;
+		@include text-shadow;
+		font-size: 72px;
+		@include media-breakpoint-only(xs) { font-size: 24px; }
+		@include media-breakpoint-only(sm) { font-size: 36px; }
+		@include media-breakpoint-only(md) { font-size: 48px; }
+		font-family: $CTA-font;
+		}
+
+	}
+
+	#hpSlogan {
+		background-position: center;
+    	background-size: cover;
+
+	    .innerContainer {
+	    	background-color: rgba(73, 99, 167, 0.77);
+  			padding: 75px;
+
+	    h1 {
+	    	color: #ffffff;
+	    	@include text-shadow;
+	    	font-family: 'Arima Madurai', cursive;
+	    	text-align: center;
+	    }
+	}
+}
+
+#staffPhoto {
+	@include shadow;
+}
+
 	#hpServiceCards {
 
 		.card {
 			margin-bottom: 50px;
 	    	text-align: center;
-	    	border: solid 3px $brand-primary;
+	    	border: solid 3px #000;
 	    	flex-basis: 25%;
 
 	    	.cardInner {
 	    		height: 250px;
 			    color: white;
 			    text-transform: uppercase;
+			    background-size: cover;
+			    background-position: center;
 
 			    .opacityLayer {
 			    	background-color: rgba(0, 0, 0, 0.59);
@@ -370,7 +373,7 @@ header {
 
 		h3 {
 			color: $brand-primary;
-			font-family: Courgette,cursive;
+			font-family: $CTA-font;
 		}
 
 		hr {
@@ -408,9 +411,10 @@ header {
 		
 		a {
 			background: linear-gradient(to right, $brand-primary 50%, white 50%);
-		    background-size: 203% 100%;
+		    background-size: 200% 100%;
 		    background-position: right bottom;
 		    transition: all .25s linear;
+		    color: black;
 
 			&:hover {
 				color: white;
@@ -419,8 +423,10 @@ header {
 		}
 		.active {
 			background: $brand-primary;
+			color: white;
+			
 			&:hover {
-				color: #ffffff;
+				color: white;
 				background-color: $brand-primary;
 			}
 			
@@ -443,35 +449,6 @@ header {
 
 //CONTACT
 #contactPage {
-	#contact_callout {
-	    color: white;
-	    text-align: center;
-	    margin-bottom: 2rem;
-
-	    .innerContainer {
-			background-color: rgba(73,99,167,.77);
-			padding: 50px;
-	    }
-
-		.contact_info {
-			h1, h3{
-				color: #ffffff;
-				font-family: Arima Madurai,cursive;
-			}
-
-			h3 {
-				word-break: break-all;
-			}
-
-			a {
-				color: #ffffff;
-
-				&:hover {
-					text-decoration: none;
-				}
-			}
-		}
-	}
 
 	#studioHours {
 		ul {
@@ -481,9 +458,19 @@ header {
 			li {
 				span {
 					font-weight: bold;
-					color: $brand-tertiary;
+					color: $brand-primary;
 				}
 			}
+		}
+	}
+
+	#studioContact {
+		i {
+			color: $brand-tertiary;
+		}
+
+		a {
+			text-decoration: none;
 		}
 	}
 }
@@ -582,7 +569,7 @@ header {
 				    content: "";
 				    width: 50px;
 				    height: 2px;
-				    background-color: $brand-primary;
+				    background-color: $brand-secondary;
 				}
 			}
 
