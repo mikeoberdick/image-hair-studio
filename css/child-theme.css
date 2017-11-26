@@ -9364,7 +9364,7 @@ a:active {
 
 header {
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   min-height: 250px;
   margin-bottom: 2rem; }
   header .opacityLayer {

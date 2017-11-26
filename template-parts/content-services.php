@@ -83,18 +83,18 @@
 						    </tr>
 						    <tr>
 						      <td>Partial Foil Highlight</td>
-						      <td>40</td>
+						      <td>95</td>
 						    </tr>
 						    <tr>
 						      <td>Gloss</td>
-						      <td>95</td>
+						      <td>40</td>
 						    </tr>
 						    <tr>
 						      <td>10 Pack Foil</td>
 						      <td>50</td>
 						    </tr>
 						    <tr>
-						      <td>Belayge</td>
+						      <td>Balayage</td>
 						      <td><span>starting at</span> 160</td>
 						    </tr>
 						    <tr>
@@ -106,7 +106,7 @@
 						      <td>60</td>
 						    </tr>
 						    <tr>
-						    	<td>
+						    	 <td colspan="2">
 						    	*long hair extra	
 						    	</td>	
 						    </tr>
