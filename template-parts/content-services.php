@@ -134,7 +134,7 @@
 						    </tr>
 						    <tr>
 						      <td>Texturizing Waves</td>
-						      <td>>???</td>
+						      <td>???</td>
 						    </tr>
 						  </tbody>
 						</table>
@@ -156,7 +156,7 @@
 						    </tr>
 						    <tr>
 						      <td>Chin</td>
-						      <td>???</td>
+						      <td>8</td>
 						    </tr>
 						    <tr>
 						      <td>Lip</td>

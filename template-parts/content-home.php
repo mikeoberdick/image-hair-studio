@@ -45,7 +45,7 @@
 		<div class="col-sm-6">
 			<h5>The Girls of Image Hair Studio</h5>
 			<p><?php the_field('staff_text'); ?></p>
-			<a href = '<?php echo bloginfo('url'); ?>/meet-the-staff'><button role = 'button' class = 'btn btn-primary btn-lg'>Meet The Staff</button></a>
+			<!-- <a href = '<?php echo bloginfo('url'); ?>/meet-the-staff'><button role = 'button' class = 'btn btn-primary btn-lg'>Meet The Staff</button></a> -->
 		</div>
 	</div>
 </div>
@@ -91,7 +91,7 @@
 		<div class="card">
 			<div class = "cardInner" style = "background-image: url('<?php echo $texture['url']; ?>')">
 				<div class="opacityLayer">
-  					<h3>Texture Treatments/Designer Waves</h3>
+  					<h3>Texture Treatments & Designer Waves</h3>
   				</div>
   			</div>
 		</div><!-- .card -->
@@ -128,7 +128,7 @@
 		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm-12">
-						<h1 class = "sectionTitle text-center pl-5 pr-5">Instagram</h1>
+						<h1 class = "sectionTitle text-center pl-5 pr-5">Portfolio</h1>
 				</div>
 			</div>
 		</div><!-- .container -->

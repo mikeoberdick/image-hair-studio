@@ -9554,6 +9554,11 @@ header {
   #staffPage .staffProfile:last-of-type hr {
     display: none; }
 
+#aboutPage #loungePic {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3); }
+
 #servicesPage #servicesMenu .nav-item {
   margin-top: 5px; }
 

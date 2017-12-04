@@ -406,6 +406,14 @@ header {
 	}
 }
 
+//ABOUT
+
+#aboutPage {
+	#loungePic {
+		@include shadow;
+	}
+}
+
 //SERVICES
 
 #servicesPage {

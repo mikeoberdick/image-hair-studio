@@ -2,9 +2,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/lounge.jpg);" alt="Image Hair Studio Lounge">
+				<img id = "loungePic" src="<?php echo get_stylesheet_directory_uri(); ?>/img/lounge.jpg);" alt="Image Hair Studio Lounge">
 				<div class = "mt-2 text-center">
-					<p>This is the caption here</p>
+					<p class = "font-italic">The lounge at Image Hair Studio.</p>
 				</div>
 			</div><!-- .col-md-5 -->
 				
